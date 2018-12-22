@@ -2,6 +2,8 @@
 
 <img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/img1.png" width="150">
 
+<br>
+
 ## What is TF Multi Classifier?
 
 TF Multi Classifier App uses Tensorflow lite to classify camera frames in real time.
@@ -9,17 +11,31 @@ TF Multi Classifier App uses Tensorflow lite to classify camera frames in real t
 You can download from Google Play here:
 * [TF Multi Classifier FREE](https://play.google.com/store/apps/details?id=com.edodm85.tfmulticlassifier.free)
 
+<br>
 
 ## Features
 
 - Classify with Tensorflow lite
 - Custom dataset
 
+<br>
 
-## Transfer Learning
+## Transfer learning
+
+An easy and fast way for train a model is to use "Transfer learning".
+
+"Transfer learning" provides the opportunity to adapt a pre-trained model (a model that has been already trained) to new classes of data.
+This concept is summarized in three steps:
+
+ - download the pre-trained model
+ - adds a new final layer
+ - train that new layer 
+
+<br>
 
 <B>Step 1</B>: Install tensorflow (following the official tutorial [HERE](https://www.tensorflow.org/install/pip))
 
+<br>
 
 
 <B>Step 2</B>: Clone this Git repository:
@@ -30,6 +46,7 @@ and "cd" into the following directory:
 
 <pre>cd tensorflow-for-poets-2</pre>
 
+<br>
 
 
 <B>Step 3</B>: Before you start any training, you'll need a set of images to teach the model about the new classes you want to recognize. Download the photos:
@@ -39,9 +56,16 @@ Flower photos by google:
 <pre>curl http://download.tensorflow.org/example_images/flower_photos.tgz \
     | tar xz -C tf_files</pre>
 
+or download your images from google images in a structure like this:
 
+<pre>tf_files/name_class/
+      class1/[images...]
+      class2/[images...]
+      class3/[images...]</pre>
 
+PS: set this folder in "--image_dir"
 
+<br>
 
 <B>Step 4</B>: Run the training with this command:
 
@@ -61,12 +85,14 @@ You can use other configurations, for example:
   - mobilenet_A_B with A: 128, 160, 192, or 224px and B: 1.0, 0.75, 0.50, or 0.25.
   - inception_v3
 
+<br>
 
 
 <B>Step 5</B>: Now we have these two file:
   - retrained_labels.txt: text file containing labels.
   - retrained_graph_mobilenet_1.0_224.pb: contains a version of the selected network with a final layer retrained on your categories.
 
+<br>
 
 <B>Step 6</B>: Convert the model ".pb" in ".tflite" for tensorflow lite.
 
@@ -78,11 +104,16 @@ I tryed to use tflite_convert in windows without positive results. So I installe
   --input_arrays=Mul \
   --output_arrays=final_result</pre>
 
+<br>
 
 <B>Step 7</B>: Now you can load this two file in my Android App:
   - retrained_graph_lite.tflite
   - retrained_labels.txt
 
+
+
+<br>
+<br>
 
 
 ## License
