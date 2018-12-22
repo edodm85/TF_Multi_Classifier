@@ -1,5 +1,6 @@
 # TF Multi Classifier
 
+<img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/img1.png" width="150">
 
 ## What is TF Multi Classifier?
 
@@ -9,7 +10,13 @@ You can download from Google Play here:
 * [TF Multi Classifier FREE](https://play.google.com/store/apps/details?id=com.edodm85.tfmulticlassifier.free)
 
 
+## Features
 
+- Classify with Tensorflow lite
+- Custom dataset
+
+
+## Transfer Learning
 
 
 
