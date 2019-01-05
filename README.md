@@ -18,6 +18,23 @@ You can download from Google Play here:
 - Classify with Tensorflow lite
 - Custom dataset
 
+
+<br>
+
+## Download Dataset
+
+You can download the following datasets from [HERE](https://www.dropbox.com/home/Dataset):
+- Dog Breed (created with Transfer learning)
+- Dog Vs Cat (created with Transfer learning)
+- Google Datasets: (converted from google pb dataset)
+  - Bird
+  - Insect
+  - Plant
+  - Seefood
+
+
+
+
 <br>
 
 ## Transfer learning
