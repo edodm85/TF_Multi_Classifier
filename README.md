@@ -33,7 +33,7 @@ You can download the following datasets from [HERE](https://www.dropbox.com/home
   - Seefood
 
 
-
+<img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/Screenshot_Bird_Classify.png" width="200"><img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/Screenshot_Insect_Classify.png" width="200"><img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/Screenshot_Plant_Classify.png" width="200"><img src="https://github.com/edodm85/TF_Multi_Classifier/blob/master/Resources/Screenshot_Seedfood_Classify.png" width="200">
 
 <br>
 
