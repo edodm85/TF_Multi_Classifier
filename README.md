@@ -13,10 +13,27 @@ You can download from Google Play here:
 
 <br>
 
+## Benchmark
+
+Mean inference time:
+
+| Model                        | Phone     | Android | CPU 1TH | CPU 2TH | NNAPI | GPU   |
+| ---                          | ---       | ---     | ---     | ---     | ---   | ---   |
+| mobilenet_v1_224 (FLOAT)     | Pixel 2XL | 9       | 165ms   | 115ms   | 110ms | 40ms  |
+| mobilenet_v1_224 (QUANTIZED) | Pixel 2XL | 9       | 85ms    | 50ms    | 80ms  | N/A   |
+| mobilenet_v1_224 (FLOAT)     | Nexus 5   | 6.0     | 180ms   | 200ms   | N/A   | N/A   |
+| mobilenet_v1_224 (QUANTIZED) | Nexus 5   | 6.0     | 120ms   | 100ms   | N/A   | N/A   |
+| mobilenet_v1_224 (FLOAT)     | LG G6     | 8.0     | 260ms   | 220ms   | N/A   | 50ms |
+| mobilenet_v1_224 (QUANTIZED) | LG G6     | 8.0     | 220ms   | 140ms   | N/A   | N/A   |
+  
+
+<br>
+
 ## Features
 
 - Classify with Tensorflow lite
 - Custom dataset
+- GPU supported (requires OpenGL ES 3.1 or higher)
 
 
 <br>
